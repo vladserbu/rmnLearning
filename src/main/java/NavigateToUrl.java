@@ -6,4 +6,8 @@ public class NavigateToUrl {
     /**
      * return something
      */
+
+    public void myMethods() {
+        System.out.println("do soemthing");
+    }
 }
