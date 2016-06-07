@@ -9,7 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 
-
 public class NavigateToUrl {
 
     public static void main (String[] args) {
@@ -19,7 +18,8 @@ public class NavigateToUrl {
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("Weather in London");
         searchBox.submit();
+        driver.manage().window().maximize();
+        driver.close();
     }
-
 
 }
