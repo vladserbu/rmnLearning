@@ -14,10 +14,11 @@ public class NavigateToUrl {
     public static void main (String[] args) {
 
         WebDriver driver = new FirefoxDriver();
-        driver.get("http://www.google.com");
+        driver.get("http://www.vouchercodes.co.uk");
         WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("Weather in London");
+        searchBox.sendKeys("Sky");
         searchBox.submit();
+        driver.findElement(By.xpath("html/body/div[4]/div[1]/div/section[2]/div/button[2]")).click();
         driver.manage().window().maximize();
         driver.close();
     }
