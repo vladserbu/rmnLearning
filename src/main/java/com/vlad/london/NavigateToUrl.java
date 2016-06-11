@@ -5,7 +5,7 @@ package com.vlad.london;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
@@ -13,7 +13,7 @@ public class NavigateToUrl {
 
     public static void main (String[] args) {
 
-        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("http://www.vouchercodes.co.uk");
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("Sky");
