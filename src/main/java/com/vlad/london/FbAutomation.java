@@ -16,6 +16,7 @@ public class FbAutomation {
         driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys("/Chisinau2015");
         By.xpath(".//*[@id='loginbutton']']").findElement(driver).click();
 
+
     }
 
 
